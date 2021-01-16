@@ -1,0 +1,382 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.navbardbcontainer {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	max-width: 1450px;
+	margin-right: auto;
+	margin-left: auto;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.dashboarddiv {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
+	padding: 20px 20px;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: transparent;	
+}
+
+.dbcontainer-flex {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	max-width: 1450px;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;	
+}
+
+.dbnavbar {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 20px;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: #708cea;	
+}
+
+.dashboardgrid {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"profile ddchart ddchart ddchart"
+		"profile goal1 goal2 goal3"
+		"profile hwbmigraph hwbmigraph notif"
+		"profile height weight bmi";
+	grid-column-gap: 10px;
+	grid-row-gap: 20px;
+	align-items: flex-start;
+	grid-auto-flow: column;
+	grid-auto-columns: minimax(260px, 1fr);
+}
+
+.div1 {
+	grid-area: profile;
+	border: 2px solid #D9D9D9;
+	border-radius: 5px;
+}
+
+.div2 {
+	grid-area: ddchart;
+	border: 2px solid #D9D9D9;
+	border-radius: 5px;	
+}
+
+.div3 {
+	grid-area: goal1;
+}
+
+.div4 {
+	grid-area: goal2;
+}
+
+.div5 {
+	grid-area: goal3;
+}
+
+.div6 {
+	grid-area: hwbmigraph;
+	border: 2px solid #D9D9D9;
+	border-radius: 5px;
+}
+
+.div7 {
+	grid-area: notif;
+}
+
+.div8 {
+	grid-area: height;
+}
+
+.div9 {
+	grid-area: weight;
+}
+
+.div10 {
+	grid-area: bmi;
+}
+.centertext {
+	text-align: center;
+}
+
+.highcharts-figure, .highcharts-data-table table {
+  width: 100%;
+  margin: 1em auto;
+}
+
+#container {
+  height: 400px;
+}
+
+.highcharts-data-table table {
+	font-family: Verdana, sans-serif;
+	border-collapse: collapse;
+	border: 1px solid #EBEBEB;
+	margin: 10px auto;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+}
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.highcharts-data-table th {
+	font-weight: 600;
+  padding: 0.5em;
+}
+
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+  padding: 0.5em;
+}
+
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+  background: #f1f7ff;
+}
+
+.goals {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+.goals td {
+	border-color: #D9D9D9;
+	border-style: solid;
+	border-width: 1px;
+	font-family: "Yu Gothic UI Light";
+	font-size: 14px;
+	overflow: hidden;
+	padding: 10px 5px;
+	word-break: normal;
+}
+
+.goals th {
+	border-color: #D9D9D9;
+	border-style: solid;
+	border-width: 1px;
+	font-family: "Yu Gothic UI Light";
+	font-size: 14px;
+	font-weight: normal;
+	overflow: hidden;
+	padding: 10px 5px;
+	word-break: normal;
+}
+
+.goals .exercises {
+	text-align: left;
+	vertical-align: top;
+}
+
+.goals .exduration {
+	text-align: center;
+	vertical-align: top;
+}
+
+.goal-heading {
+	text-align: left;
+	background: #3C62C3;
+}
+
+.goal-schedule {
+	text-align: left;
+}
+
+.gh {
+	font-size: 20px;
+	color: white;
+}
+
+.demotitles {
+	text-align: left;
+	font-family: "Yu Gothic UI Light";
+}
+
+th {
+    background-color: #3C62C3;
+    color: #fff;
+    padding: 2px;
+}
+
+td {
+    border-top: 1px solid #eee;
+    padding: 2px;
+}
+
+attinput {
+    cursor: pointer;
+}
+
+/* Column types */
+th.missed-col {
+    background-color: #354C5E;
+}
+
+td.missed-col {
+    background-color: #D9D9D9;
+    color: #0D0000;
+    text-align: center;
+}
+
+.name-col {
+    text-align: left;
+}
+.attendance {
+    line-height: 1;
+    margin: 5px;
+    width: 100%;
+}
+
+.portlet {
+    margin-bottom: 15px;
+}
+
+.btn-white {
+    border-color: #cccccc;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.chat-list {
+    padding: 0;
+    font-size: .8rem;
+}
+
+.chat-list li {
+    margin-bottom: 10px;
+    overflow: auto;
+    color: #ffffff;
+}
+
+.chat-list .chat-img {
+    float: left;
+    width: 48px;
+}
+
+.chat-list .chat-img img {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.chat-list .chat-message {
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 10px;
+    background: #5a99ee;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+	text-align: left;
+	font-family: 'Yu Gothic UI Light';
+}
+
+.chat-list .chat-message:before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    width: 0;
+    height: 0;
+}
+
+.chat-list .chat-message h5 {
+    margin: 0 0 5px 0;
+    font-weight: 600;
+    line-height: 100%;
+    font-size: .9rem;
+}
+
+.chat-list .chat-message p {
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-list .chat-body {
+    margin-left: 20px;
+    float: left;
+    width: 70%;
+}
+
+.chat-list .in .chat-message:before {
+    left: -12px;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #5a99ee;
+}
+
+.chat-list .out .chat-img {
+    float: right;
+}
+
+.chat-list .out .chat-body {
+    float: right;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.chat-list .out .chat-message {
+    background: #fc6d4c;
+}
+
+.chat-list .out .chat-message:before {
+    right: -12px;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #fc6d4c;
+}
+
+.card .card-header {
+    background: #3C62C3;
+    border: 0;
+    font-size: 1rem;
+    padding: .65rem 1rem;
+    position: relative;
+    font-weight: 600;
+    color: #ffffff;
+	font-family: "Yu Gothic UI Light";
+}

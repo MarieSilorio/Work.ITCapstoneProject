@@ -1,0 +1,490 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.navbar {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 20px;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: transparent;
+}
+
+.navigation-container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.navigation-left {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.w-nav-brand {
+	position: relative;
+	float: left;
+	text-decoration: none;
+	color: #333333;
+}
+
+.w-nav {
+	position: relative;
+	z-index: 1000;
+}
+
+.w-nav:before,
+.w-nav:after {
+	content: " ";
+	display: table;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	grid-column-end: 2;
+	grid-row-end: 2;
+}
+
+.w-nav:after {
+	clear: both;
+}
+
+.brand {
+	margin-right: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.text-block {
+	font-family: "Yu Gothic UI Light";
+	font-size: 32px;
+	color: white;
+	display: inline;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.navigation-right {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.menu-button {
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 55px;
+    min-width: 55px;
+    margin-right: 0px;
+    margin-left: 14px;
+    padding: 16px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: rgba(126, 130, 143, 0.1);
+}
+
+.w-nav-button {
+	position: relative;
+	float: right;
+	padding: 18px;
+	font-size: 24px;
+	display: none;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.w-nav-button.w--open {
+  background-color: #708cea;
+  color: #9fb4fc;
+}
+
+.w-nav[data-collapse="all"] .w-nav-button {
+  display: block;
+}
+
+.w-icon-nav-menu:before {
+	content: "\e602";
+}
+
+.nav-menu {
+	margin-right: 14px;
+}
+
+@media screen and (max-width: 991px) {
+	
+	.icon {
+	color: #FFFFFF;
+	}
+	
+	.nav-menu {
+		margin-right: 0px;
+	}
+	
+	.w-nav[data-collapse="medium"] .w-nav-button {
+    display: block;
+	}
+	
+	.menu-button.w--open {
+	background-color: transparent;
+	}
+	
+	.navigation-right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+	}
+	
+	.navbar {
+    z-index: 5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+	}
+	
+	.w-nav[data-collapse="medium"] .w-nav-menu {
+    display: none;
+	}
+	
+	.nav-link {
+    padding-top: 25px;
+    padding-bottom: 25px;
+	}
+	
+	.feature {
+    padding-top: 140px;
+    padding-bottom: 100px;
+	}
+	
+	.container-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+	}
+	
+	.navigation-container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	
+	.w-nav[data-collapse="small"] .w-nav-button {
+    display: block;
+	}
+	
+	.w-nav-brand {
+    padding-left: 10px;
+	}
+	
+	.w-nav[data-collapse="small"] .w-nav-menu {
+    display: none;
+	}
+	
+	.feature {
+    padding-bottom: 60px;
+	}
+	
+	.navigation-container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: 479px){
+	
+	.w-nav[data-collapse="tiny"] .w-nav-button {
+    display: block;
+	}
+	
+	.navbar {
+    position: absolute;
+    background-color: hsla(0, 0%, 100%, 0);
+	}
+	
+	.w-nav[data-collapse="tiny"] .w-nav-menu {
+    display: none;
+	}
+	
+	.feature {
+    padding-top: 115px;
+	}
+	
+	.container-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;	
+	}
+	
+	.featuredimg {
+	width: 100%;
+	}
+	
+	.navigation-container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	max-width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	}
+}
+
+.w-nav-menu {
+	position: relative;
+	float: right;
+}
+
+.w-nav[data-collapse="all"] .w-nav-menu {
+	display: none;
+}
+
+.nav-link {
+	padding-right: 16px;
+	padding-left: 16px;
+	opacity: 0.8;
+	-webkit-transition: opacity 200ms ease;
+	transition: opacity 200ms ease;
+	color: white;
+	font-size: 24px;
+	text-transform: none;
+	font-family: "Calibri Light";
+}
+
+.nav-link:hover {
+	opacity: 1;
+	color: white;
+}
+
+.nav-link.w--current {
+	color: white;
+}
+
+.w-nav-link {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: white;
+	padding: 12px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.w-nav-link.w--current {
+	color: white;
+}
+
+.signup {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #354C5E;
+	border-radius: 5px;
+	background-color: transparent;
+}
+
+.signup-current {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #354C5E;
+	border-radius: 5px;	
+	background-color: #354C5E;
+}
+
+.feature {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	overflow: hidden;
+	padding: 100px 3% 140px;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background-color: transparent;
+}
+
+.container-flex {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	max-width: 1200px;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.feature-heading {
+	font-family: "Yu Gothic UI Light";
+	color: white;
+}
+
+.feature-paragraph {
+	font-family: "Yu Gothic UI Light";
+	color: white;
+}
+
+.form {
+	max-width: 600px;
+}
+
+
+.signupform {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"lastname firstname firstname birthday"
+		"location location location city"
+		"membershipid contactnum email email"
+		"password password reenter reenter"
+		"remember remember signup signup";
+	grid-column-gap: 5px;
+	grid-row-gap: 10px;
+	align-items: flex-start;
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(260px, 1fr);
+}
+
+.label1 {
+	grid-area: lastname;
+}
+
+.label2 {
+	grid-area: firstname;
+}
+
+.label3 {
+	grid-area: birthday;
+}
+
+.label4 {
+	grid-area: location;
+}
+
+.label5 {
+	grid-area: city;
+}
+
+.label6 {
+	grid-area: membershipid;
+}
+
+.label7 {
+	grid-area: contactnum;
+}
+
+.label8 {
+	grid-area: email;
+}
+
+.label9 {
+	grid-area: password;
+}
+
+.label10 {
+	grid-area: reenter;
+}
+
+.label11{
+	grid-area: remember;
+}
+
+.label12{
+	grid-area: signup;
+}
+
